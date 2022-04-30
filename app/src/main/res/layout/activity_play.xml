@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:splitMotionEvents="false"
+    tools:context=".PlayActivity">
+
+    <TextView
+        android:id="@+id/turno"
+        android:layout_width="150dp"
+        android:layout_height="41dp"
+        android:text="@string/initial_game"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutUpper"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayoutCentral"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.424" />
+
+    <TextView
+        android:id="@+id/table_point"
+        android:layout_width="88dp"
+        android:layout_height="79dp"
+        android:text="@string/points"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@+id/turno"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.835"
+        app:layout_constraintStart_toEndOf="@+id/turno"
+        app:layout_constraintTop_toTopOf="@+id/turno"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutUpper"
+        android:layout_width="380dp"
+        android:layout_height="138dp"
+        android:orientation="horizontal"
+        android:splitMotionEvents="false"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayoutCentral"
+        app:layout_constraintStart_toStartOf="@+id/linearLayoutCentral"
+        app:layout_constraintTop_toTopOf="@+id/imageView">
+
+        <Button
+            android:id="@+id/button_1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="50sp"
+            android:layout_weight="1"
+            android:splitMotionEvents="false"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:id="@+id/button_2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="50sp"
+            android:layout_weight="1"
+            android:splitMotionEvents="false"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:id="@+id/button_3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="50sp"
+            android:layout_weight="1"
+            android:splitMotionEvents="false"
+            style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutCentral"
+        android:layout_width="380dp"
+        android:layout_height="122dp"
+        android:orientation="horizontal"
+        android:splitMotionEvents="false"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutUnder"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutUpper">
+
+        <Button
+            android:id="@+id/button_4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="50sp"
+            android:layout_weight="1"
+            android:splitMotionEvents="false"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:id="@+id/button_5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="50sp"
+            android:layout_weight="1"
+            android:splitMotionEvents="false"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:id="@+id/button_6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="50sp"
+            android:layout_weight="1"
+            android:splitMotionEvents="false"
+            style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutUnder"
+        android:layout_width="380dp"
+        android:layout_height="138dp"
+        android:orientation="horizontal"
+        android:splitMotionEvents="false"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayoutCentral"
+        app:layout_constraintStart_toStartOf="@+id/linearLayoutCentral">
+
+        <Button
+            android:id="@+id/button_7"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="50sp"
+            android:layout_weight="1"
+            android:splitMotionEvents="false"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:id="@+id/button_8"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="50sp"
+            android:layout_weight="1"
+            android:splitMotionEvents="false"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:id="@+id/button_9"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="50sp"
+            android:layout_weight="1"
+            android:splitMotionEvents="false"
+            style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="424dp"
+        android:contentDescription="@string/griglia"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/tic_tac_toe" />
+    <!--android:layout_width="392dp"
+        android:layout_height="424dp"-->
+</androidx.constraintlayout.widget.ConstraintLayout>

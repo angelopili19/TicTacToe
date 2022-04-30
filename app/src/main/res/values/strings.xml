@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="tic_tac_toe">Tic Tac Toe</string>
+    <string name="gioca">Gioca</string>
+    <string name="griglia">Griglia</string>
+    <string name="initial_game">Turno: O</string>
+    <string name="points">Punteggio:\n-O = $2s\n-X = $3s</string>
+</resources>
